@@ -1,22 +1,23 @@
-package com.br.igorsily.udemycursospringboot.mappers;
+package com.br.igorsily.udemytestespringboot.mapper;
 
-import com.br.igorsily.udemycursospringboot.dtos.v1.PersonDTO;
-import com.br.igorsily.udemycursospringboot.entitys.Person;
+
+import com.br.igorsily.udemytestespringboot.dto.v1.EmployeeDTO;
+import com.br.igorsily.udemytestespringboot.model.Employee;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
 @Mapper
-public interface PersonMapper {
+public interface EmployeeMapper {
 
-    PersonMapper INSTANCE = Mappers.getMapper(PersonMapper.class);
+    EmployeeMapper INSTANCE = Mappers.getMapper(EmployeeMapper.class);
 
-    PersonDTO toDTO(Person person);
+    EmployeeDTO toDTO(Employee Employee);
 
-    Person toEntity(PersonDTO personDTO);
+    Employee toEntity(EmployeeDTO EmployeeDTO);
 
-    List<PersonDTO> toDTOList(List<Person> personList);
+    List<EmployeeDTO> toDTOList(List<Employee> EmployeeList);
 
-    List<Person> toEntityList(List<PersonDTO> personDTOList);
+    List<Employee> toEntityList(List<EmployeeDTO> EmployeeDTOList);
 }

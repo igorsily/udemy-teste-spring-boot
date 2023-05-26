@@ -1,4 +1,4 @@
-package com.br.igorsily.udemycursospringboot.exceptions;
+package com.br.igorsily.udemytestespringboot.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -13,5 +13,9 @@ public class EntityNotFoundException extends RuntimeException {
 
     public EntityNotFoundException(String exception) {
         super(exception);
+    }
+
+    public EntityNotFoundException(String exception, Throwable cause) {
+        super(exception, cause);
     }
 }

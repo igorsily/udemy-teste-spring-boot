@@ -1,4 +1,4 @@
-package com.br.igorsily.udemycursospringboot.exceptions;
+package com.br.igorsily.udemytestespringboot.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package com.br.igorsily.udemycursospringboot.config;
+package com.br.igorsily.udemytestespringboot.config;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
